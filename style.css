@@ -20,6 +20,7 @@ h2 {
     font-weight: 400;
     font-size: 26px;
     color: #333333;
+    margin-top: 27px;
 }
 
 h3 {
@@ -38,17 +39,16 @@ h4 {
 }
 
 .price {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 700;
     color: #000000;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     color: #A6A6A6;
+    flex-wrap: wrap;
 }
 
 .top {
@@ -63,29 +63,76 @@ p {
 }
 
 .content {
-    padding: 31px 0 16px 19px;
+    padding: 4px 0 16px 19px;
 }
 
 .scroll {
     
     overflow-x: scroll;
-    margin: 17px 0 27px 0;
+    margin-top: 17px;
     width: 100%;
     height: auto;
-    white-space: nowrap;
+    display: flex;
 }
 
-.scroll > span {
+.scroll > div {
     width: 172px;
-    height: 216px;
+    height: 202px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    border-style: solid;
-    border-color: rgba(0 0 0 0.25);
     margin-right: 16px;
-    display: inline-block;
 }
 
+.main > div {
+    height: 216px;   
+}
 
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 18px 14px 13px 14px;
+    white-space: pre-wrap;
+    height: 100%;
+}
+
+.course > div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.bottom {
+    width: 100%;
+    height: 92px;
+    background-color: #FFFFFF;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom > input {
+    border-radius: 30.5px;
+    border-width: 1px;
+    border-color: #A6A6A6;
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
