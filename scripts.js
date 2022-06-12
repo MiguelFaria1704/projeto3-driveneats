@@ -66,20 +66,24 @@ function unlockOrder() {
 }
 
 function confirm() {
-    document.querySelector(".confirmation-box").classList.remove("hide");
-    document.querySelector(".cover").classList.remove("hide");
+    const proceed = document.querySelector(".close-order");
 
-    document.querySelector(".confirmation-box .main h3").innerHTML = option1;
-    document.querySelector(".confirmation-box .main .price").innerHTML = price1;
+    if(proceed !== null) {
+        document.querySelector(".confirmation-box").classList.remove("hide");
+        document.querySelector(".cover").classList.remove("hide");
 
-    document.querySelector(".confirmation-box .drink h3").innerHTML = option2;
-    document.querySelector(".confirmation-box .drink .price").innerHTML = price2;
+        document.querySelector(".confirmation-box .main h3").innerHTML = option1;
+        document.querySelector(".confirmation-box .main .price").innerHTML = price1;
 
-    document.querySelector(".confirmation-box .dessert h3").innerHTML = option3;
-    document.querySelector(".confirmation-box .dessert .price").innerHTML = price3;
+        document.querySelector(".confirmation-box .drink h3").innerHTML = option2;
+        document.querySelector(".confirmation-box .drink .price").innerHTML = price2;
 
-    total = total.toFixed(2).replace('.' , ',');
-    document.querySelector(".confirmation-box .total").innerHTML = "R$" + total;
+        document.querySelector(".confirmation-box .dessert h3").innerHTML = option3;
+        document.querySelector(".confirmation-box .dessert .price").innerHTML = price3;
+
+        total = total.toFixed(2).replace('.' , ',');
+        document.querySelector(".confirmation-box .total").innerHTML = "R$" + total;
+    }
 }
 
 function sendToWA() {
