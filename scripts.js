@@ -101,7 +101,6 @@ function sendToWA() {
         Endereço: ${endereco};
     `;
     let text="https://wa.me/5521987691897?text=" + encodeURIComponent(msg);
-    console.log(text);
 }
 
 function cancelOrder() {
