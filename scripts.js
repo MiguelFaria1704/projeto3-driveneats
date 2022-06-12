@@ -100,12 +100,12 @@ function sendToWA() {
         Nome: ${nome};
         Endereço: ${endereco};
     `;
-    let text="https://wa.me/5521987691897?text=" + encodeURIComponent(msg);
+    let url="https://wa.me/5521987691897?text=" + encodeURIComponent(msg);
+
+    window.open(url);
 }
 
 function cancelOrder() {
     document.querySelector(".confirmation-box").classList.add("hide");
     document.querySelector(".cover").classList.add("hide");
 }
-
-

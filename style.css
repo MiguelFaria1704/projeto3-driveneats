@@ -262,33 +262,37 @@ img {
         display: none;
     }
 
+    body {
+        background-color: #CF2B2B;
+    }
+
     .desktop-error {
         display: flex;
         flex-direction: column;
-        width: 600px;
-        height: 200px;
+        width: 80%;
+        height:300px;
         position: fixed;
-        left: calc(50% - 300px);
-        top: calc(50% - 100px);
+        left: 10%;
+        top: calc(50% - 150px);
         align-items: center;
         justify-content: space-between;
+        
     }
 
     .desktop-error h1 {
         font-size: 50px;
         text-align: center;
         line-height: 70px;
-        color: gray;
+        color: #FFFFFF;
         font-weight: 700;
+        font-family: 'Righteous', cursive;
     }
 
     .desktop-error p {
         font-size: 20px;
         text-align: center;
-        color: gray;
+        color: #FFFFFF;
         font-weight: 400;
-    }
-
-
-    
+        font-family: 'Roboto', sans-serif;
+    }  
 }
